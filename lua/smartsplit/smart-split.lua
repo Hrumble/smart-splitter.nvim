@@ -4,7 +4,8 @@ M.config = {
 	excluded_buftypes = {
 		"nofile",
 		"terminal"
-	}
+	},
+	priority = "vsplit"
 }
 
 local ratio = vim.api.nvim_win_get_width(0) / vim.api.nvim_win_get_height(0)
@@ -18,7 +19,7 @@ function M.get_smart_dir(win)
 	local height = vim.api.nvim_win_get_height(win) *  ratio
 	local width = vim.api.nvim_win_get_width(win)
 
-	local split_dir = "vsplit"
+	local split_dir = M.config.priority
 
 	if height > width then
 		split_dir = "split"

@@ -1,4 +1,4 @@
-# smart_splitter.nvim
+# smart-splitter.nvim
 Smart splitter is a very simple plugin that allows you to simply call split, and let the nvim decide where to split.
 Juggling between splitting horizontaly and vertically manually can be a hassle (not really), so Smart Splitter gets rid of that pain for you!
 
@@ -39,7 +39,8 @@ smart-splitter.nvim is **EXTREMELY** configurable, please refer to the list of o
         -- default values
         "nofile",
         "terminal"
-    }
+    },
+    priority = "vsplit" -- possible values "vsplit" for vertical, "split" horizontal
 }
 -- that's it
 ```
