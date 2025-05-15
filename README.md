@@ -14,4 +14,21 @@ require("smartsplit.smart-split").smart_split()
 ```
 
 # Setup
-**TODO**
+
+## Lazy
+
+```lua
+{
+    'Hrumble/smart-splitter.nvim',
+    config = function()
+		require("smartsplit.smart-split").setup({
+            -- opts go here
+        })
+    end
+}
+```
+calling the setup method is necessary, as on the first time you open nvim it will determine the width/height ratio based on your current font.
+
+*I have no idea how to use other package managers.*
+# Options
+*TODO*
