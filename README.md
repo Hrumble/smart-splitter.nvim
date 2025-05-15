@@ -30,5 +30,19 @@ require("smartsplit.smart-split").smart_split()
 calling the setup method is necessary, as on the first time you open nvim it will determine the width/height ratio based on your current font.
 
 *I have no idea how to use other package managers.*
-# Options
-*TODO*
+# Configuration
+smart-splitter.nvim is **EXTREMELY** configurable, please refer to the list of options below
+
+```lua
+{
+    excluded_buftypes = { -- The buftypes to exclude when looking for a window to split
+        -- default values
+        "nofile",
+        "terminal"
+    }
+}
+-- that's it
+```
+
+
+
